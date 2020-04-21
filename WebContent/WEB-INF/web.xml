@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" id="WebApp_ID" version="4.0">
+  <display-name>HR_Management_System</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list> 
+  
+  <servlet>
+        <servlet-name>LoginCheck</servlet-name>
+        <servlet-class>LoginCheck</servlet-class>
+    </servlet>
+
+   <servlet-mapping>
+        <servlet-name>LoginCheck</servlet-name>
+        <url-pattern>/Login</url-pattern>
+    </servlet-mapping>
+       
+     <servlet>
+        <servlet-name>RegisterEmployee</servlet-name>
+        <servlet-class>RegisterEmployee</servlet-class>
+    </servlet>
+
+   <servlet-mapping>
+        <servlet-name>RegisterEmployee</servlet-name>
+        <url-pattern>/EmployeeRegistration</url-pattern>
+    </servlet-mapping> 
+    
+    <servlet>
+        <servlet-name>DeletEmployee</servlet-name>
+        <servlet-class>DeletEmployee</servlet-class>
+    </servlet>
+
+   <servlet-mapping>
+        <servlet-name>DeletEmployee</servlet-name>
+        <url-pattern>/DeletEmployee</url-pattern>
+    </servlet-mapping>
+    
+     <servlet>
+        <servlet-name>UpdateEmployeeController</servlet-name>
+        <servlet-class>UpdateEmployeeController</servlet-class>
+    </servlet>
+
+   <servlet-mapping>
+        <servlet-name>UpdateEmployeeController</servlet-name>
+        <url-pattern>/EmployeeUpdate</url-pattern>
+    </servlet-mapping>
+    
+   <servlet>
+        <servlet-name>AddProjectController</servlet-name>
+        <servlet-class>AddProjectController</servlet-class>
+    </servlet>
+
+   <servlet-mapping>
+        <servlet-name>AddProjectController</servlet-name>
+        <url-pattern>/AddProject</url-pattern>
+    </servlet-mapping>  
+    
+     <servlet>
+        <servlet-name>DeleteProjectController</servlet-name>
+        <servlet-class>DeleteProjectController</servlet-class>
+    </servlet>
+
+   <servlet-mapping>
+        <servlet-name>DeleteProjectController</servlet-name>
+        <url-pattern>/DeleteProjectController</url-pattern>
+    </servlet-mapping> 
+
+ <servlet>
+        <servlet-name>UpdateProjectController</servlet-name>
+        <servlet-class>UpdateProjectController</servlet-class>
+    </servlet>
+
+   <servlet-mapping>
+        <servlet-name>UpdateProjectController</servlet-name>
+        <url-pattern>/ProjectUpdate</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>AddSalaryController</servlet-name>
+        <servlet-class>AddSalaryController</servlet-class>
+    </servlet>
+
+   <servlet-mapping>
+        <servlet-name>AddSalaryController</servlet-name>
+        <url-pattern>/PayrollAssign</url-pattern>
+    </servlet-mapping>  
+        
+    <servlet>
+        <servlet-name>UpdatePayrollController</servlet-name>
+        <servlet-class>UpdatePayrollController</servlet-class>
+    </servlet>
+
+   <servlet-mapping>
+        <servlet-name>UpdatePayrollController</servlet-name>
+        <url-pattern>/PayrollUpdate</url-pattern>
+    </servlet-mapping> 
+    
+     <servlet>
+        <servlet-name>DeletePayrollController</servlet-name>
+        <servlet-class>DeletePayrollController</servlet-class>
+    </servlet>
+
+   <servlet-mapping>
+        <servlet-name>DeletePayrollController</servlet-name>
+        <url-pattern>/DeletePayrollController</url-pattern>
+    </servlet-mapping>   
+
+	  <servlet>
+        <servlet-name>AssignTaskController</servlet-name>
+        <servlet-class>AssignTaskController</servlet-class>
+    </servlet>
+
+   <servlet-mapping>
+        <servlet-name>AssignTaskController</servlet-name>
+        <url-pattern>/AssignTask</url-pattern>
+    </servlet-mapping>  
+    
+      <servlet>
+        <servlet-name>DeleteTaskController</servlet-name>
+        <servlet-class>DeleteTaskController</servlet-class>
+    </servlet>
+
+   <servlet-mapping>
+        <servlet-name>DeleteTaskController</servlet-name>
+        <url-pattern>/DeleteTaskController</url-pattern>
+    </servlet-mapping>  
+    
+      <servlet>
+        <servlet-name>UpdateTaskController</servlet-name>
+        <servlet-class>UpdateTaskController</servlet-class>
+    </servlet>
+
+   <servlet-mapping>
+        <servlet-name>UpdateTaskController</servlet-name>
+        <url-pattern>/TaskUpdate</url-pattern>
+    </servlet-mapping> 
+    
+      <servlet>
+        <servlet-name>AddProjectManagerController</servlet-name>
+        <servlet-class>AddProjectManagerController</servlet-class>
+    </servlet>
+
+   <servlet-mapping>
+        <servlet-name>AddProjectManagerController</servlet-name>
+        <url-pattern>/AddProjectManager</url-pattern>
+    </servlet-mapping> 
+    
+     <servlet>
+        <servlet-name>ForgotPasswordController</servlet-name>
+        <servlet-class>ForgotPasswordController</servlet-class>
+    </servlet>
+
+   <servlet-mapping>
+        <servlet-name>ForgotPasswordController</servlet-name>
+        <url-pattern>/ForgotPassword</url-pattern>
+    </servlet-mapping> 
+    
+    <servlet>
+        <servlet-name>UpdateToDoTaskController</servlet-name>
+        <servlet-class>UpdateToDoTaskController</servlet-class>
+    </servlet>
+
+   <servlet-mapping>
+        <servlet-name>UpdateToDoTaskController</servlet-name>
+        <url-pattern>/ToDoTaskUpdate</url-pattern>
+    </servlet-mapping> 
+       
+    <servlet>
+        <servlet-name>LogoutController</servlet-name>
+        <servlet-class>LogoutController</servlet-class>
+    </servlet>
+
+   <servlet-mapping>
+        <servlet-name>LogoutController</servlet-name>
+        <url-pattern>/Logout</url-pattern>
+    </servlet-mapping>
+  
+</web-app>
